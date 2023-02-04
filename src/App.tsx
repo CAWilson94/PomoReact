@@ -7,7 +7,7 @@ import CardHeader from '@mui/material/CardHeader';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 
-function App() {
+const App = () => {
   return (
     <div className="Container">
       <Card sx={{ maxWidth: 345 }}>
