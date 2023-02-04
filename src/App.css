@@ -9,6 +9,15 @@
   margin-top: 20%;
 }
 
+.StartStopButtons {
+  display: flex;
+  align-content: space-around;
+  min-width: fit-content;
+  width: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
