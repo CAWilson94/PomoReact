@@ -6,7 +6,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
+  margin-left: 20%;
+  max-width: fit-content;
+}
+
+.TimerClass {
+  max-width: fit-content;
 }
 
 .StartStopButtons {

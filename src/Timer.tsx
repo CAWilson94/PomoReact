@@ -26,7 +26,7 @@ const Timer = ({ minute }: TimerProps) => {
 
     return (
         <div className="Container">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className='TimerCard'>
                 <CardHeader
                     avatar={
                         <Avatar aria-label="recipe" src="https://i.pinimg.com/originals/e1/a1/17/e1a117e9cacfb963fbb70a805f3e0109.jpg">
@@ -40,6 +40,11 @@ const Timer = ({ minute }: TimerProps) => {
                     title={minute + 'minute timer'}
                     subheader="Get some work done!"
                 />
+                <CardActions className="StartStopButtons">
+                   <Button>Pomodoro</Button>
+                   <Button>Short Break</Button>
+                   <Button>Long Break</Button>
+                </CardActions>
                 <CardMedia
                     component="img"
                     height="194"
