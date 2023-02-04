@@ -1,10 +1,10 @@
 import Avatar from '@mui/material/Avatar';
-import { red } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Button, Card, CardActions, CardContent, CardMedia, IconButton, Typography } from '@mui/material';
+import { Card, CardActions, CardContent, CardMedia, IconButton, Typography } from '@mui/material';
 import CardHeader from '@mui/material/CardHeader';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
+import Button from '@mui/material/Button';
+import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
+import PauseRoundedIcon from '@mui/icons-material/PauseRounded';
 
 type TimerProps = {
     minute: string;
@@ -21,7 +21,7 @@ const Timer = ({ minute }: TimerProps) => {
 
     }
     const timer = () => {
-        
+
     }
 
     return (
@@ -41,9 +41,9 @@ const Timer = ({ minute }: TimerProps) => {
                     subheader="Get some work done!"
                 />
                 <CardActions className="StartStopButtons">
-                   <Button>Pomodoro</Button>
-                   <Button>Short Break</Button>
-                   <Button>Long Break</Button>
+                    <Button sx={{ color: 'red' }} variant="text">Pomodoro</Button>
+                    <Button sx={{ color: 'red' }} variant="text">Short Break</Button>
+                    <Button sx={{ color: 'red' }} variant="text">Long Break</Button>
                 </CardActions>
                 <CardMedia
                     component="img"
@@ -57,8 +57,12 @@ const Timer = ({ minute }: TimerProps) => {
                     </Typography>
                 </CardContent>
                 <CardActions className="StartStopButtons">
-                   <Button>Start</Button>
-                   <Button>Stop</Button>
+                    <IconButton aria-label="play">
+                        <PlayArrowRoundedIcon fontSize="large" sx={{color: 'red'}}/>
+                    </IconButton>
+                    <IconButton aria-label="play">
+                        <PauseRoundedIcon fontSize="large" sx={{color: 'red'}}/>
+                    </IconButton>
                 </CardActions>
             </Card>
         </div>
