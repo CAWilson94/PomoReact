@@ -9,7 +9,7 @@ import ShareIcon from '@mui/icons-material/Share';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Container">
       <Card sx={{ maxWidth: 345 }}>
         <CardHeader
           avatar={
